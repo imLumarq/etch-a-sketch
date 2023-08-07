@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap");
+
+:root {
+    --font-family: "Londrina Shadow", cursive;
+    --font-size: 1rem;
+    --letter-spacing: 5px;
+
+    /*********************
+    Colors
+    *********************/
+    --accent-color-two: #2dc1e6;
+    --accent-color: #2d6371;
+    --body-background-color: #c7e6ff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+button {
+    text-transform: capitalize;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+}
+
+html {
+    color-scheme: light only;
+}
+
+body {
+    align-items: center;
+    background-color: var(--body-background-color);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+section {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 4vw;
+    letter-spacing: var(--letter-spacing);
+}
+
+section h2 {
+    font-size: 2vw;
+    letter-spacing: var(--letter-spacing);
+}
+
+.inputs,
+.size {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+input[type="color"] {
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    height: 75px;
+    width: 75px;
+    outline: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+label {
+    font-size: calc(var(--font-size) * 2);
+    font-weight: bold;
+    letter-spacing: var(--letter-spacing);
+}
+
+input[type="range"] {
+    -webkit-appearance: none !important;
+    background-color: var(--accent-color);
+    border-radius: 2rem;
+    cursor: grab;
+    height: 1rem;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: var(--accent-color-two);
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+}
+
+input[type="color"]:hover,
+input[type="color"]:focus,
+input[type="range"]:hover,
+input[type="range"]:focus {
+    transform: scale(1.15);
+    transition: all 0.5s ease;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.buttons > button {
+    border-radius: 2rem;
+    border: 1px solid black;
+    box-shadow: 0.75rem 0.75rem 0.75rem rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: calc(var(--font-size) * 2);
+    letter-spacing: var(--letter-spacing);
+    padding: 1rem 2rem;
+}
+
+.buttons > button:hover,
+.buttons > button:focus {
+    font-weight: bold;
+    transform: scale(1.15);
+    transition: all 0.5s ease;
+}
+
+.container {
+    aspect-ratio: 1 / 1;
+    border: 1px solid black;
+    box-shadow: 1rem 1rem 1rem rgb(0, 0, 0);
+    display: grid;
+    max-width: 800px;
+    width: 90vw;
+}
+
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/*1131px and below*/
+@media screen and (max-width: 70.6875em) {
+    section h1 {
+        font-size: 6vw;
+    }
+
+    section h2 {
+        font-size: 5vw;
+    }
+
+    .selection-buttons > button {
+        font-size: var(--font-size);
+        padding: 1rem;
+    }
+}
