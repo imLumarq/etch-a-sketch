@@ -74,9 +74,11 @@ function SetNewGrid(newGridSize) {
 
 /*....................Setting colors....................*/
 
-color.addEventListener("onchange", () => {
+color.onchange = SetNewColor;
+
+function SetNewColor() {
     color = this.value;
-});
+}
 
 randomColor.addEventListener("click", () => {
     color = GetRadomColor();
