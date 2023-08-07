@@ -3,6 +3,7 @@
 :root {
     --font-family: "Londrina Shadow", cursive;
     --font-size: 1rem;
+    --gap: 1.5rem;
     --letter-spacing: 5px;
 
     /*********************
@@ -43,7 +44,7 @@ body {
     background-color: var(--body-background-color);
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: var(--gap);
     justify-content: center;
     padding: 1rem;
 }
@@ -68,7 +69,7 @@ section h2 {
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: var(--gap);
     justify-content: center;
 }
 
@@ -124,7 +125,7 @@ input[type="range"]:focus {
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: var(--gap);
     flex-direction: column;
 }
 
