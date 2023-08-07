@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="icon" type="jpg/png" href="./images/tab-image.png" />
+        <title>Ecth-A-Sketch | Lu-Marq</title>
+    </head>
+    <body>
+        <section>
+            <h1>Etch-a-sketch</h1>
+            <h2>Swirl and have fun</h2>
+        </section>
+
+        <div class="inputs">
+            <input type="color" id="color" value="#2D6371" />
+            <div class="size">
+                <label id="grid-size-label"></label>
+                <input
+                    type="range"
+                    id="grid-size"
+                    min="1"
+                    max="32"
+                    value="16"
+                />
+            </div>
+
+            <div class="buttons">
+                <button id="random-color">random color</button>
+                <button id="erase">erase</button>
+                <button id="clear-all">clear all</button>
+            </div>
+        </div>
+
+        <div class="container"></div>
+    </body>
+</html>
