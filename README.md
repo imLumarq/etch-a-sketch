@@ -1,4 +1,4 @@
-# Ecth-A-Sketch <img src="./images/tab-image.png" max-width="40" max-height="40">
+# Ecth-A-Sketch <img src="./images/tab-image.png" max-width="20" max-height="20">
 
 Etch A Sketch is a mechanical drawing toy invented by André Cassagnes of France and subsequently manufactured by the Ohio Art Company.It is now owned by Spin Master of Toronto, Ontario, Canada.
 
